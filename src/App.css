@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome-page {
+  background-image: url("imgrp/wel.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 9s infinite;
+  /* animation-delay: calc(0.7s * var(--i)); */
+  animation-delay: .9s;
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+.welcome-page .waviy {
+  text-align: center;
+  height: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: whitesmoke;
+  cursor: none;
+  transform: translate(-50%, -50%);
+  text-shadow: rgba(255, 255, 255, 0.267) orangered;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.maindiv{
+  height: 100vh;
+    background-image: 
+    url("imgrp/ap.jpeg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+}
+.mainbox {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.name h1 {
+  font-size: 2.6rem;
+}
+
+.name p {
+  font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+  .name h1 {
+    font-size: 25px;
+  }
+  .name p {
+    font-size: 18px;
+  }
+}
+
+.search-box {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  text-shadow: 0.2rem 0.2rem 0.7rem black;
+}
+
+input{
+  background: transparent;
+  border: .1rem solid white;
+  border-radius: .3rem;
+}
+input::placeholder{
+  color: white;
+}
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 1px rgb(223, 219, 219);
+}
+.Areai {
+  text-align: center;
+  color: white;
+}
+.search-btn {
+  width: 100px;
+  margin-left: 10px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.search-btn:hover {
+  box-shadow: 0px 0px 10px 1px rgb(51, 67, 80);
+}
+.temprature {
+  margin-top: 40px;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.temprature div {
+  margin-top: 40px;
+}
+
+.data h1 {
+  font-size: 4rem;
+}
+
+.data p {
+  font-size: 3rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.267);
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.details div {
+  flex-grow: 1;
+  width: 33%;
+  height: 100px;
+}
+
+.errorbox {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.econtent {
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.267);
+}
+
+@media (max-width: 400px) {
+  .econtent h1 {
+    font-size: 15px;
+    padding: 0px;
+  }
+}
+.cd {
+  text-shadow: 0.3rem 0.3rem 0.5rem white;
+}
